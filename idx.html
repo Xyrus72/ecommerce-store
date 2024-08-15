@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYRUS</title> 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('./pic/male-self-care-items-arrangement.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 0.5rem;
+        }
+
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0 1rem;
+            gap: 2rem; /* Space between the carousel and the text */
+        }
+        
+        .who {
+            flex: 1; /* Allows .who to take available space */
+        }
+
+        .best-selling {
+            flex: 1; /* Allows the text to take available space */
+            text-align: right; /* Aligns text to the right */
+        }
+    </style>
+</head>
+<body >
+     
+    <header class="flex items-center h-28 justify-between px-8 text-white">
+        <!-- Branding -->
+        <div class="flex flex-col space-y-1">
+            <h2 class="text-4xl font-extrabold text-emerald-300">WE TRUST</h2>
+            <h1 class="text-3xl font-bold text-white tracking-widest">ECO SHOP</h1>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="flex space-x-8">
+            <a href="#" class="text-lg font-medium hover:text-emerald-300 transition duration-300">Current Trending</a>
+            <a href="#" class="text-lg font-medium hover:text-emerald-300 transition duration-300">Contact Sales</a>
+            <a href="#" class="text-lg font-medium hover:text-emerald-300 transition duration-300">Become a Seller</a>
+        </nav>
+
+        <!-- Action Buttons -->
+        <div class="flex space-x-3">
+            <button class="btn btn-outline btn-accent hover:bg-emerald-300 hover:text-black transition duration-300">Sign Up</button>
+            <button class="btn btn-outline btn-accent hover:bg-emerald-300 hover:text-black transition duration-300">Log In</button>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    
+
+    <main >
+      <div class="first">
+        <div class="flex items-center justify-center min-h-screen">
+          <!-- Container for both sections -->
+          <div class="flex flex-col items-center justify-center w-full max-w-5xl bg-black bg-opacity-50 p-8 rounded-lg shadow-lg text-center">
+              <h2 class="text-5xl font-extrabold text-emerald-300 mb-2">Welcome to</h2>
+              <h1 class="text-5xl font-bold text-white tracking-widest">WE TRUST ECO SHOP</h1>
+              <button class="btn btn-outline btn-accent hover:bg-emerald-300 hover:text-black transition duration-300 mt-10">Start Exploring</button>
+          </div>
+      </div>
+      
+      </div>
+      
+      
+
+
+
+
+
+
+
+        
+      <div class="second">
+         <div class="bg-gradient-to-r from-slate-900 to-gray-700 text-white shadow-lg ">
+          <div class="flex items-center justify-center h-full "> <!-- Ensure parent container has height -->
+            <h5 class="text-5xl font-extrabold text-white-300 mb-2 mt-10">Current Trending</h5>
+        </div>
+            <div class="main-content">
+                <div class="who">
+                    <div class="carousel w-full mt-16">
+                        <div id="slide1" class="carousel-item relative w-full">
+                            <img src="./pic/sports-shoe-pair-design-illustration-generated-by-ai.jpg" class="w-full h-[600px] object-cover" />
+                            <div class="absolute left-10 right-10 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide4" class="btn btn-circle">❮</a>
+                                <a href="#slide2" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide2" class="carousel-item relative w-full">
+                            <img src="./pic/close-up-knitted-bag-nature.jpg" class="w-full h-[600px] object-cover" />
+                            <div class="absolute left-10 right-10 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide1" class="btn btn-circle">❮</a>
+                                <a href="#slide3" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide3" class="carousel-item relative w-full">
+                            <img src="./pic/minimal-t-shirt-set-apparel-ad.jpg" class="w-full h-[600px] object-cover" />
+                            <div class="absolute left-10 right-10 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide2" class="btn btn-circle">❮</a>
+                                <a href="#slide4" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide4" class="carousel-item relative w-full">
+                            <img src="./pic/professional-hair-dryer-flat-lay.jpg" class="w-full h-[600px] object-cover" />
+                            <div class="absolute left-10 right-10 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide3" class="btn btn-circle">❮</a>
+                                <a href="#slide1" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+                <div class="best-selling">
+                    <p class="text-7xl font-extrabold text-white-300 mr-80">Buy The Best Selling</p>
+                    <p class="text-5xl font-extrabold text-emerald-300 mr-80">Products From Us</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+      </div>
+      <div><p>fffffff</p></div>
+        
+
+       
+    </main>
+
+    <footer class="bg-black bg-opacity-75 text-white py-4 mt-1 text-center">
+      <h5 class="text-lg font-medium">© 2024 WE TRUST ECO SHOP. All rights reserved.</h5>
+  </footer>
+  
+    <script src="./script.js"></script>
+</body>
+</html>

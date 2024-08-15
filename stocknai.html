@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Nai</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('./outofstock/dark-grunge-texture.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 0.5rem;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        main {
+            margin-top: 7rem; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 7rem); 
+            width: 100%;
+            padding: 0 1rem;
+            box-sizing: border-box; 
+        }
+
+        .first {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 1rem;
+        }
+
+        .first .flex {
+            max-width: 5xl;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            border-radius: 0.375rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="flex items-center h-28 justify-between px-8 text-white">
+        <!-- Branding -->
+        <div class="flex flex-col space-y-1">
+            <h2 class="text-4xl font-extrabold text-emerald-300">WE TRUST</h2>
+            <h1 class="text-3xl font-bold text-white tracking-widest">ECO SHOP</h1>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="flex space-x-8">
+            <a  href="./index.html" class="text-lg font-medium hover:text-emerald-300 transition duration-300">Home</a>
+            <a href="./products.html" class="text-lg font-medium hover:text-emerald-300 transition duration-300">Current Trending</a>
+            <a href="#" class="text-lg font-medium hover:text-emerald-300 transition duration-300">About Us</a>
+        </nav>
+
+        <!-- Action Buttons -->
+        <div class="flex space-x-3">
+            <button id="btn-back" class="btn btn-outline btn-accent hover:bg-emerald-300 hover:text-black transition duration-300">Go Back</button>
+            
+    </header>
+
+    <main>
+        <div class="first">
+            <div class="flex flex-col items-center justify-center w-full max-w-5xl bg-black bg-opacity-50 p-8 rounded-lg shadow-lg text-center">
+                <h2 class="text-5xl text-red-500 mb-2">Stock Out</h2>
+                <h1 class="text-xl font-bold text-white tracking-widest">Unfortunately, the product you're looking for is currently out of stock. Please check back later or explore other products we have.</h1>
+                <button  class="btn btn-error mt-10">Stock Out</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer bg-base-200 text-base-content p-10">
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+          <h6 class="footer-title">Newsletter</h6>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="input input-bordered join-item" />
+              <button class="btn btn-primary join-item">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </footer>
+
+</body>
+<script src="./stocknai.js"></script
+
+</html>
